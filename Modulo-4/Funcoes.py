@@ -40,3 +40,18 @@ def exibir_dados(nome, idade):
 
 # Chamando a função com argumentos nomeados
 exibir_dados(idade=25, nome="João")
+
+# Função com *args e **kwargs
+def exibir_informacoes(*args, **kwargs):
+    """Exibe informações usando args e kwargs."""
+    print("Argumentos posicionais (args):")
+    for arg in args:
+        print(f"- {arg}")
+    
+    print("\nArgumentos nomeados (kwargs):")
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+# Chamando a função com args e kwargs
+exibir_informacoes("Python", "Programação", linguagem="Python", nivel="Intermediário")
+
